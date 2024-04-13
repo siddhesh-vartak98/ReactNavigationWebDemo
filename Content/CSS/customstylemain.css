@@ -1,14 +1,25 @@
 ﻿
-:root{
-	--primeryColor:#313349;
-	--secoundColor:#D5D4F4;
-	--textColor:#F1F1F1;
-	--sectionBkColor:#25292E;
-	--blackColor:#000000;
-	--navbarShadow:#000;
+:root {
+	--primeryColor: #313349;
+	--secoundColor: #D5D4F4;
+	--textColor: #F1F1F1; /*white*/
+	--textGrayColor: #606770; /*gray(footer)*/
+	--sunModeBgColor: #E9E9E9;
+	--sectionBkColor: #25292E;
+	--blackColor: #000000;
+	--navbarShadow: #000;
+	--textFontFamily: sans-serif;
 }
 
+/*-------Common style--------------------*/
+.nav-brand-text, .navbar-nav .nav-link, .footer-link, .footer-section h4 {
+	font-family: var(--textFontFamily);
+	font-style: normal;
+	letter-spacing: 0;
+	line-height: 1.5;
+}
 
+/*----------------------Header --------------------------*/
 .navbar {
 	box-shadow: 0px 8px 20px 2px var(--navbarShadow);
 }
@@ -45,7 +56,7 @@
 }
 
 	.light-dark-mode:hover {
-		background-color: lightgray;
+		background-color: var(--sunModeBgColor);
 		border-radius: 50%;
 	}
 
@@ -59,8 +70,6 @@
 	color: var(--blackColor);
 }
 
-	
-
 .navbar-nav .nav-link {
 	font-size: 16px;
 	font-weight: 500;
@@ -71,11 +80,47 @@
 	color: var(--blackColor);
 }
 
-
 	.nav-brand-text:hover, .navbar-light .navbar-nav .nav-link:hover {
 		color: var(--secoundColor);
 	}
-	
 
-	body {
+/*--------------------Footer ---------------------------*/
+
+.footer-section{
+
+}
+
+	.footer-section h4{
+		font-size:18px;
+		font-weight:700;
 	}
+
+	.footer-section ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+		.footer-section ul li:not(:first-child) {
+			margin-top:.5rem;
+		}
+
+	.footer-link {
+		font-size: 16px;
+		font-weight: 400;
+		color: var(--textGrayColor);
+	}
+
+	.footer-link:hover {
+		color: var(--secoundColor);
+	}
+
+	/*---------------- main Section -----------------------*/
+	/*------------------------Home ----------------------------*/
+
+.banner{
+	height:100dvh;
+}
+
+body {
+}

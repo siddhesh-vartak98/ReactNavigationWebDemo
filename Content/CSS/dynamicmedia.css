@@ -2,8 +2,29 @@
 /*--------- For all mobile device screen--------*/
 @media only screen and (min-width: 320px) and (max-width: 480px)
 {
-	.banner{
-		height:80dvh;
+	.navbar{
+		padding-left:5px;
+	}
+
+	.navbar-light .navbar-toggler {
+		border: none;
+		padding: .25rem 5px;
+	}
+
+	.navbar .form-inline{
+		width:40px;
+	}
+
+	.navSearch-input{
+		padding:20px;
+	}
+
+	.navSearch-searchGlass{
+		left:.8rem;
+	}
+
+	.banner {
+		height: 80dvh;
 	}
 
 	.banner-card {
@@ -38,5 +59,13 @@
 			padding: 8px 42px;
 			margin-top:15px;
 			margin-right: 8px;
+		}
+
+	.sectionThree-box{
+		height:auto;
+	}
+
+		.sectionThree-box .sectionThree-para{
+			font-size:15px;
 		}
 }

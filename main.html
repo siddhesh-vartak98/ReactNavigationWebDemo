@@ -33,19 +33,22 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <div class="d-flex">
-                    <div>
-                        <img src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="React Navigation Logo">
+            <div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">
+                    <div class="d-flex">
+                        <div>
+                            <img src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="React Navigation Logo">
+                        </div>
+                        <div class="align-self-center ml-2 nav-brand-text">
+                            React Navigation
+                        </div>
                     </div>
-                    <div class="align-self-center ml-2 nav-brand-text">
-                        React Navigation
-                    </div>
-                </div>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                </a>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -66,7 +69,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            Version
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">7.x</a>
@@ -94,17 +97,25 @@
                         </a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0 position-relative">
-                    <input class="form-control mr-sm-2 navSearch-input" type="search" placeholder="Search" aria-label="Search">
-                    <div class="navSearch-searchGlass">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div class="navSearch-kdbSection">
-                        <kbd>CTRL</kbd> <kbd>K</kbd>
-                    </div>
-
-                </form>
+                <!--<form class="form-inline my-2 my-lg-0 position-relative">
+            <input class="form-control mr-sm-2 navSearch-input" type="search" placeholder="Search" aria-label="Search">
+            <div class="navSearch-searchGlass">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+            <div class="navSearch-kdbSection">
+                <kbd>CTRL</kbd> <kbd>K</kbd>
+            </div>
+        </form>-->
+            </div>
+            <form class="form-inline my-2 my-lg-0 position-relative">
+                <input class="form-control mr-sm-2 navSearch-input" type="search" placeholder="Search" aria-label="Search">
+                <div class="navSearch-searchGlass">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="navSearch-kdbSection desktop">
+                    <kbd>CTRL</kbd> <kbd>K</kbd>
+                </div>
+            </form>
         </nav>
     </header>
     <main>
@@ -267,7 +278,8 @@
                                 <div class="sectionThree-para">
                                     React Navigation is built by <a href="#" class="link-Three">Expo</a> , <a href="#" class="link-Three">Software Mansion</a> , and <a href="#" class="link-Three">Callstack</a> , with contributions from the <a href="#" class="link-Three">community</a>  and <a href="#" class="link-Three">sponsors</a> :
                                 </div>
-                                <div class="d-md-flex justify-content-center my-3">
+
+                                <div class="d-flex flex-wrap justify-content-center my-3">
                                     <div>
                                         <a href="#">
                                             <img src="https://placehold.co/50x50" class="my-2 mx-2" alt="img_1" />
